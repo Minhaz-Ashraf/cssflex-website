@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b4998e9ce3.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
+</head>
+<body>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        
+       min-height: 100vh;
+        display: flex;
+    }
+    .left{
+        background-color: black;
+        width: 20vw;
+    }
+    .right{
+        background-color: white;
+        width: 80vw;
+    }
+
+    ul {
+    list-style-type: none;
+    margin-top: 50px;
+    margin-left: 60px;
+    padding: 0;
+    width: 130px;
+    font-size: 30px;
+    font-weight:500;
+
+    
+  
+}
+
+li a {
+    position: relative;
+    display: block;
+    color: white;
+    padding: 10px 0 10px 0px;
+    text-decoration: none;
+}
+
+
+li a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+li a:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.fa{
+    font-size: 25px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:  black;
+}
+
+.contain {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+padding: 50px;
+}
+.left{
+    background-image: url(https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?w=740&t=st=1687703213~exp=1687703813~hmac=b9549994b8454650bbaedf1efaa92a1cf1622360cebe65b6b5eb3f6bfd1da09f);
+    background-size: cover;
+}
+.right  h1{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+</style>
+
+
+    <div id="myDIV" class="container">
+        <div class="left">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-solid fa-house-chimney"></i> Home</a></li>
+                <li><a href="blog.html"><i class="fa fa-regular fa-newspaper"></i> Blog</a></li>
+                <li><a href="guide.html"><i class="fa fa-solid fa-book"></i> Guide</a></li>
+                <li><a href="contact.html"><i class="fa fa-solid fa-tty"></i> Contact</a></li>
+                <li><a href="about.html"><i class="fa fa-solid fa-user"></i> About</a></li>
+              </ul>
+
+        </div>
+        <div class="right">
+            <h1>Contact Form</h1>
+
+<div class="contain">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">China</option>
+      <option value="usa">Dubai</option>
+      <option value="usa">India</option>
+      <option value="usa">Nigeria</option>
+      <option value="usa">Thailand</option>
+      <option value="usa">Spain</option>
+      <option value="usa">Turkey</option>
+      <option value="usa">USA</option>
+      <option value="usa">Zimbawe</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

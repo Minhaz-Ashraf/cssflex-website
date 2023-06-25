@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b4998e9ce3.js" crossorigin="anonymous"></script>
+    <title>Blog</title>
+</head>
+<body>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #666666;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: #333;
+}
+.container{
+        
+        min-height: 100vh;
+         display: flex;
+     }
+     .left{
+         background-color: black;
+         width: 20vw;
+     }
+     .right{
+         background-color: white;
+         width: 80vw;
+     }
+ 
+     ul {
+     list-style-type: none;
+     margin-top: 50px;
+     margin-left: 60px;
+     padding: 0;
+     width: 130px;
+     font-size: 30px;
+     font-weight:500;
+ 
+     
+   
+ }
+ 
+ li a {
+     position: relative;
+     display: block;
+     color: white;
+     padding: 10px 0 20px 0px;
+     text-decoration: none;
+ }
+ 
+ 
+ li a::after{
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: #0087ca;
+   transform-origin: bottom right;
+   transition: transform 0.25s ease-out;
+ }
+ 
+ li a:hover::after{
+   transform: scaleX(1);
+   transform-origin: bottom left;
+ }
+ .fa{
+     font-size: 25px;
+ }
+
+
+#wrap {
+  margin: 20px auto;
+  width: 1000px;
+}
+#header {
+  background: #666666 ;
+  height: 200px;
+}
+#header h1 {
+  font-size: 38px;
+  letter-spacing: -1px;
+  padding: 70px 0 0 40px;
+  color: #fff;
+}
+
+#header h2 {
+  font-size: 19px;
+  color: #EFECE0;
+  padding: 20px 0 0 40px; 
+  letter-spacing: -1px;
+  font-weight: 100;     
+}
+
+#content {                
+  background: #666666 ; 
+  padding: 10px;
+}
+.figure {   
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bst {
+  float: bst;
+  width: 730px;
+  text-align: justify;
+  padding: 10px;
+  font-size: 14px;
+  background: #fff;
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.bst h2 {
+  font-size: 20px;
+  font-weight: 100;
+  padding: 15px 0 7px 0;
+}
+.bst h2 a {
+  text-decoration: none;
+}
+.bst h2 a:hover {
+  text-decoration: underline;
+}
+
+#bottom {
+  background: #d4ccae ;
+  padding: 10px 0;
+  width: 76.5%;
+}
+#footer {
+  text-align: center;
+  font-size: 11px;
+}
+img{
+  background-size: cover;
+  width: 60%;
+}
+.left{
+    background-image: url(https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?w=740&t=st=1687703213~exp=1687703813~hmac=b9549994b8454650bbaedf1efaa92a1cf1622360cebe65b6b5eb3f6bfd1da09f);
+    background-size: cover;
+}
+    </style>
+ <div id="myDIV" class="container">
+  <div class="left">
+      <ul>
+          <li><a href="index.html"><i class="fa fa-solid fa-house-chimney"></i> Home</a></li>
+          <li><a href="blog.html"><i class="fa fa-regular fa-newspaper"></i> Blog</a></li>
+          <li><a href="guide.html"><i class="fa fa-solid fa-book"></i> Guide</a></li>
+          <li><a href="contact.html"><i class="fa fa-solid fa-tty"></i> Contact</a></li>
+          <li><a href="about.html"><i class="fa fa-solid fa-user"></i> About</a></li>
+        </ul>
+
+  </div>
+  <div class="right">
+    
+    <div id="wrap">
+      <div id="header">
+        <h1>Blogs</a></h1>
+        <h2>Website description</h2>
+      </div>
+     
+    <div id="content">
+      <div class="bst">
+        <h2>This is a blog post</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo obcaecati eligendi fugiat voluptas architecto odit, recusandae enim autem vero, repudiandae iusto sunt assumenda nesciunt ratione eveniet? Fugit voluptatum, voluptates assumenda exercitationem labore consequatur rem recusandae delectus ipsa quasi impedit quisquam, ullam vero nobis itaque ipsum molestiae necessitatibus et repudiandae eos adipisci dolores! Nisi recusandae ullam quaerat vel odio, autem animi, vero iure rerum libero excepturi natus quam in quae dolorem eum, voluptates beatae. Sint aperiam corrupti voluptatibus consectetur architecto ab magni repudiandae aspernatur, recusandae sunt omnis, officia adipisci perspiciatis totam, similique molestias temporibus. Veniam nesciunt praesentium animi, nemo cum rem? </p>
+        </br>
+        </br>
+        <img class="figure" style="border:3px solid #ccc;" alt="blog pic" src="https://img.freepik.com/free-vector/pensive-businessman-making-decision_74855-5283.jpg?w=996&t=st=1687702409~exp=1687703009~hmac=ebb12ec666254303da49cddad321767815af3690bda8a808957e9c5486ad64b4"</img>
+        </br>
+        </br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem doloribus exercitationem voluptatibus! Minima unde illo necessitatibus provident aliquid autem dolorem itaque nam. Laboriosam vel sapiente, totam enim est perferendis quaerat in ipsa impedit deleniti cum eos voluptates, eveniet praesentium dignissimos reprehenderit iusto! Facere cum fugiat fugit quo sunt? Tempora, voluptates!</p>
+        <h2>This is another blog post</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi dignissimos delectus, nostrum rerum ad velit earum, nobis nihil quis quidem veritatis vel cumque provident recusandae sit sequi, porro doloremque cupiditate voluptatem dolorem natus. Aperiam non, eius est omnis ad deleniti tempora repellendus nostrum officiis consequatur, asperiores neque distinctio reprehenderit in?</p>
+        </br>
+        </br>
+      </div>
+    
+       <div style="clear:both;"></div>
+       <div id="bottom"></div>
+      
+     </div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
